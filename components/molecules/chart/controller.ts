@@ -5,5 +5,4 @@ export default class PopulationChartCtrl {
     public labels: string[],
     public datasets: DataSet[],
   ) {}
-
 }

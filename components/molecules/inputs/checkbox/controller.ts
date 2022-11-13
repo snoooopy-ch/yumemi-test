@@ -21,3 +21,8 @@ export default class CheckboxCtrl extends BaseInput<boolean> {
     this.value = false;
   }
 }
+
+export type CheckBoxTestInput = {
+  prefCode: number;
+  value: boolean;
+}

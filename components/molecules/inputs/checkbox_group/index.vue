@@ -54,20 +54,4 @@ const onClickCheckboxInput = function(index: number) {
 </script>
 
 <style lang="scss" scoped>
-.checkbox_row {
-  display: flex;
-  flex-wrap: wrap;
-
-  &_item {
-    display: block;
-  }
-}
-
-::v-deep(.v-row) {
-  display: flex;
-
-  @media only screen and (max-width: 680px) {
-    display: block;
-	}
-}
 </style>
