@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{ props.ctrl.label }}
     <div class="checkbox_row">
       <CheckboxInput
         v-for="(checkbox, index) in props.ctrl.checkboxes"
