@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "20fa28f0-ff73-42fd-8710-fbccf4afaee9",
+		"name": "RESAS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11420618"
+	},
+	"item": [
+		{
+			"name": "prefectures",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "{{Access_Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://opendata.resas-portal.go.jp/api/v1/prefectures",
+					"protocol": "https",
+					"host": [
+						"opendata",
+						"resas-portal",
+						"go",
+						"jp"
+					],
+					"path": [
+						"api",
+						"v1",
+						"prefectures"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-KEY",
+								"value": "{{Access_Key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://opendata.resas-portal.go.jp/api/v1/prefectures",
+							"protocol": "https",
+							"host": [
+								"opendata",
+								"resas-portal",
+								"go",
+								"jp"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prefectures"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1860"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Nov 2022 07:45:24 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "c1df6c4f-3863-4499-9545-f1041e9a97a1"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "bh4HMGcTtjMFjWg="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-6370a094-342cee2129dc28b2240474c5;Sampled=0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 420b04515afbec0c45b59617f13f792a.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "IAD55-P4"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "NMOd4VuK2TCtSZjfrQfXq11rgnCHSxWXiAlR5Ng-qx66E4bjQvUrrw=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": null,\n    \"result\": [\n        {\n            \"prefCode\": 1,\n            \"prefName\": \"北海道\"\n        },\n        {\n            \"prefCode\": 2,\n            \"prefName\": \"青森県\"\n        },\n        {\n            \"prefCode\": 3,\n            \"prefName\": \"岩手県\"\n        },\n        {\n            \"prefCode\": 4,\n            \"prefName\": \"宮城県\"\n        },\n        {\n            \"prefCode\": 5,\n            \"prefName\": \"秋田県\"\n        },\n        {\n            \"prefCode\": 6,\n            \"prefName\": \"山形県\"\n        },\n        {\n            \"prefCode\": 7,\n            \"prefName\": \"福島県\"\n        },\n        {\n            \"prefCode\": 8,\n            \"prefName\": \"茨城県\"\n        },\n        {\n            \"prefCode\": 9,\n            \"prefName\": \"栃木県\"\n        },\n        {\n            \"prefCode\": 10,\n            \"prefName\": \"群馬県\"\n        },\n        {\n            \"prefCode\": 11,\n            \"prefName\": \"埼玉県\"\n        },\n        {\n            \"prefCode\": 12,\n            \"prefName\": \"千葉県\"\n        },\n        {\n            \"prefCode\": 13,\n            \"prefName\": \"東京都\"\n        },\n        {\n            \"prefCode\": 14,\n            \"prefName\": \"神奈川県\"\n        },\n        {\n            \"prefCode\": 15,\n            \"prefName\": \"新潟県\"\n        },\n        {\n            \"prefCode\": 16,\n            \"prefName\": \"富山県\"\n        },\n        {\n            \"prefCode\": 17,\n            \"prefName\": \"石川県\"\n        },\n        {\n            \"prefCode\": 18,\n            \"prefName\": \"福井県\"\n        },\n        {\n            \"prefCode\": 19,\n            \"prefName\": \"山梨県\"\n        },\n        {\n            \"prefCode\": 20,\n            \"prefName\": \"長野県\"\n        },\n        {\n            \"prefCode\": 21,\n            \"prefName\": \"岐阜県\"\n        },\n        {\n            \"prefCode\": 22,\n            \"prefName\": \"静岡県\"\n        },\n        {\n            \"prefCode\": 23,\n            \"prefName\": \"愛知県\"\n        },\n        {\n            \"prefCode\": 24,\n            \"prefName\": \"三重県\"\n        },\n        {\n            \"prefCode\": 25,\n            \"prefName\": \"滋賀県\"\n        },\n        {\n            \"prefCode\": 26,\n            \"prefName\": \"京都府\"\n        },\n        {\n            \"prefCode\": 27,\n            \"prefName\": \"大阪府\"\n        },\n        {\n            \"prefCode\": 28,\n            \"prefName\": \"兵庫県\"\n        },\n        {\n            \"prefCode\": 29,\n            \"prefName\": \"奈良県\"\n        },\n        {\n            \"prefCode\": 30,\n            \"prefName\": \"和歌山県\"\n        },\n        {\n            \"prefCode\": 31,\n            \"prefName\": \"鳥取県\"\n        },\n        {\n            \"prefCode\": 32,\n            \"prefName\": \"島根県\"\n        },\n        {\n            \"prefCode\": 33,\n            \"prefName\": \"岡山県\"\n        },\n        {\n            \"prefCode\": 34,\n            \"prefName\": \"広島県\"\n        },\n        {\n            \"prefCode\": 35,\n            \"prefName\": \"山口県\"\n        },\n        {\n            \"prefCode\": 36,\n            \"prefName\": \"徳島県\"\n        },\n        {\n            \"prefCode\": 37,\n            \"prefName\": \"香川県\"\n        },\n        {\n            \"prefCode\": 38,\n            \"prefName\": \"愛媛県\"\n        },\n        {\n            \"prefCode\": 39,\n            \"prefName\": \"高知県\"\n        },\n        {\n            \"prefCode\": 40,\n            \"prefName\": \"福岡県\"\n        },\n        {\n            \"prefCode\": 41,\n            \"prefName\": \"佐賀県\"\n        },\n        {\n            \"prefCode\": 42,\n            \"prefName\": \"長崎県\"\n        },\n        {\n            \"prefCode\": 43,\n            \"prefName\": \"熊本県\"\n        },\n        {\n            \"prefCode\": 44,\n            \"prefName\": \"大分県\"\n        },\n        {\n            \"prefCode\": 45,\n            \"prefName\": \"宮崎県\"\n        },\n        {\n            \"prefCode\": 46,\n            \"prefName\": \"鹿児島県\"\n        },\n        {\n            \"prefCode\": 47,\n            \"prefName\": \"沖縄県\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "population",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "{{Access_Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?cityCode=-&prefCode=11",
+					"protocol": "https",
+					"host": [
+						"opendata",
+						"resas-portal",
+						"go",
+						"jp"
+					],
+					"path": [
+						"api",
+						"v1",
+						"population",
+						"composition",
+						"perYear"
+					],
+					"query": [
+						{
+							"key": "cityCode",
+							"value": "-"
+						},
+						{
+							"key": "prefCode",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{Access_Key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?cityCode=-&prefCode=11",
+							"protocol": "https",
+							"host": [
+								"opendata",
+								"resas-portal",
+								"go",
+								"jp"
+							],
+							"path": [
+								"api",
+								"v1",
+								"population",
+								"composition",
+								"perYear"
+							],
+							"query": [
+								{
+									"key": "cityCode",
+									"value": "-"
+								},
+								{
+									"key": "prefCode",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2966"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Nov 2022 07:49:23 GMT"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "d7927aae-0c15-42ed-8f13-3a61f45c156b"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "bh4sfHeltjMFTsQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-6370a182-1667bbea098c6883003091bd;Sampled=0"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 27dc27c157f4b42ae253527f76742be4.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "IAD55-P4"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "sggVRAY6A5GJkLLWsZhjzPJ_4ZYFaPFNTZQRCA35_AniHVSEY513EA=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": null,\n    \"result\": {\n        \"boundaryYear\": 2015,\n        \"data\": [\n            {\n                \"label\": \"総人口\",\n                \"data\": [\n                    {\n                        \"year\": 1960,\n                        \"value\": 2430871\n                    },\n                    {\n                        \"year\": 1965,\n                        \"value\": 3014983\n                    },\n                    {\n                        \"year\": 1970,\n                        \"value\": 3866472\n                    },\n                    {\n                        \"year\": 1975,\n                        \"value\": 4821340\n                    },\n                    {\n                        \"year\": 1980,\n                        \"value\": 5420480\n                    },\n                    {\n                        \"year\": 1985,\n                        \"value\": 5863678\n                    },\n                    {\n                        \"year\": 1990,\n                        \"value\": 6405319\n                    },\n                    {\n                        \"year\": 1995,\n                        \"value\": 6759311\n                    },\n                    {\n                        \"year\": 2000,\n                        \"value\": 6938006\n                    },\n                    {\n                        \"year\": 2005,\n                        \"value\": 7054243\n                    },\n                    {\n                        \"year\": 2010,\n                        \"value\": 7194556\n                    },\n                    {\n                        \"year\": 2015,\n                        \"value\": 7266534\n                    },\n                    {\n                        \"year\": 2020,\n                        \"value\": 7272830\n                    },\n                    {\n                        \"year\": 2025,\n                        \"value\": 7202953\n                    },\n                    {\n                        \"year\": 2030,\n                        \"value\": 7076167\n                    },\n                    {\n                        \"year\": 2035,\n                        \"value\": 6909319\n                    },\n                    {\n                        \"year\": 2040,\n                        \"value\": 6721414\n                    },\n                    {\n                        \"year\": 2045,\n                        \"value\": 6524800\n                    }\n                ]\n            },\n            {\n                \"label\": \"年少人口\",\n                \"data\": [\n                    {\n                        \"year\": 1960,\n                        \"value\": 752024,\n                        \"rate\": 30.9\n                    },\n                    {\n                        \"year\": 1965,\n                        \"value\": 790961,\n                        \"rate\": 26.2\n                    },\n                    {\n                        \"year\": 1970,\n                        \"value\": 1002863,\n                        \"rate\": 25.9\n                    },\n                    {\n                        \"year\": 1975,\n                        \"value\": 1340136,\n                        \"rate\": 27.7\n                    },\n                    {\n                        \"year\": 1980,\n                        \"value\": 1458421,\n                        \"rate\": 26.9\n                    },\n                    {\n                        \"year\": 1985,\n                        \"value\": 1380180,\n                        \"rate\": 23.5\n                    },\n                    {\n                        \"year\": 1990,\n                        \"value\": 1196946,\n                        \"rate\": 18.6\n                    },\n                    {\n                        \"year\": 1995,\n                        \"value\": 1090395,\n                        \"rate\": 16.1\n                    },\n                    {\n                        \"year\": 2000,\n                        \"value\": 1024787,\n                        \"rate\": 14.7\n                    },\n                    {\n                        \"year\": 2005,\n                        \"value\": 986361,\n                        \"rate\": 13.9\n                    },\n                    {\n                        \"year\": 2010,\n                        \"value\": 953668,\n                        \"rate\": 13.2\n                    },\n                    {\n                        \"year\": 2015,\n                        \"value\": 910805,\n                        \"rate\": 12.5\n                    },\n                    {\n                        \"year\": 2020,\n                        \"value\": 871221,\n                        \"rate\": 11.9\n                    },\n                    {\n                        \"year\": 2025,\n                        \"value\": 819197,\n                        \"rate\": 11.3\n                    },\n                    {\n                        \"year\": 2030,\n                        \"value\": 778699,\n                        \"rate\": 11\n                    },\n                    {\n                        \"year\": 2035,\n                        \"value\": 744151,\n                        \"rate\": 10.7\n                    },\n                    {\n                        \"year\": 2040,\n                        \"value\": 723391,\n                        \"rate\": 10.7\n                    },\n                    {\n                        \"year\": 2045,\n                        \"value\": 698496,\n                        \"rate\": 10.7\n                    }\n                ]\n            },\n            {\n                \"label\": \"生産年齢人口\",\n                \"data\": [\n                    {\n                        \"year\": 1960,\n                        \"value\": 1545841,\n                        \"rate\": 63.5\n                    },\n                    {\n                        \"year\": 1965,\n                        \"value\": 2066337,\n                        \"rate\": 68.5\n                    },\n                    {\n                        \"year\": 1970,\n                        \"value\": 2665020,\n                        \"rate\": 68.9\n                    },\n                    {\n                        \"year\": 1975,\n                        \"value\": 3223138,\n                        \"rate\": 66.8\n                    },\n                    {\n                        \"year\": 1980,\n                        \"value\": 3624550,\n                        \"rate\": 66.8\n                    },\n                    {\n                        \"year\": 1985,\n                        \"value\": 4060573,\n                        \"rate\": 69.2\n                    },\n                    {\n                        \"year\": 1990,\n                        \"value\": 4660202,\n                        \"rate\": 72.7\n                    },\n                    {\n                        \"year\": 1995,\n                        \"value\": 4976945,\n                        \"rate\": 73.6\n                    },\n                    {\n                        \"year\": 2000,\n                        \"value\": 5011202,\n                        \"rate\": 72.2\n                    },\n                    {\n                        \"year\": 2005,\n                        \"value\": 4892253,\n                        \"rate\": 69.3\n                    },\n                    {\n                        \"year\": 2010,\n                        \"value\": 4749108,\n                        \"rate\": 66\n                    },\n                    {\n                        \"year\": 2015,\n                        \"value\": 4507174,\n                        \"rate\": 62\n                    },\n                    {\n                        \"year\": 2020,\n                        \"value\": 4421637,\n                        \"rate\": 60.7\n                    },\n                    {\n                        \"year\": 2025,\n                        \"value\": 4350217,\n                        \"rate\": 60.3\n                    },\n                    {\n                        \"year\": 2030,\n                        \"value\": 4217720,\n                        \"rate\": 59.6\n                    },\n                    {\n                        \"year\": 2035,\n                        \"value\": 4002341,\n                        \"rate\": 57.9\n                    },\n                    {\n                        \"year\": 2040,\n                        \"value\": 3700406,\n                        \"rate\": 55\n                    },\n                    {\n                        \"year\": 2045,\n                        \"value\": 3491511,\n                        \"rate\": 53.5\n                    }\n                ]\n            },\n            {\n                \"label\": \"老年人口\",\n                \"data\": [\n                    {\n                        \"year\": 1960,\n                        \"value\": 133006,\n                        \"rate\": 5.4\n                    },\n                    {\n                        \"year\": 1965,\n                        \"value\": 157685,\n                        \"rate\": 5.2\n                    },\n                    {\n                        \"year\": 1970,\n                        \"value\": 198589,\n                        \"rate\": 5.1\n                    },\n                    {\n                        \"year\": 1975,\n                        \"value\": 256014,\n                        \"rate\": 5.3\n                    },\n                    {\n                        \"year\": 1980,\n                        \"value\": 333874,\n                        \"rate\": 6.1\n                    },\n                    {\n                        \"year\": 1985,\n                        \"value\": 420099,\n                        \"rate\": 7.1\n                    },\n                    {\n                        \"year\": 1990,\n                        \"value\": 530539,\n                        \"rate\": 8.2\n                    },\n                    {\n                        \"year\": 1995,\n                        \"value\": 681172,\n                        \"rate\": 10\n                    },\n                    {\n                        \"year\": 2000,\n                        \"value\": 889243,\n                        \"rate\": 12.8\n                    },\n                    {\n                        \"year\": 2005,\n                        \"value\": 1157006,\n                        \"rate\": 16.4\n                    },\n                    {\n                        \"year\": 2010,\n                        \"value\": 1464860,\n                        \"rate\": 20.3\n                    },\n                    {\n                        \"year\": 2015,\n                        \"value\": 1788735,\n                        \"rate\": 24.6\n                    },\n                    {\n                        \"year\": 2020,\n                        \"value\": 1979972,\n                        \"rate\": 27.2\n                    },\n                    {\n                        \"year\": 2025,\n                        \"value\": 2033539,\n                        \"rate\": 28.2\n                    },\n                    {\n                        \"year\": 2030,\n                        \"value\": 2079748,\n                        \"rate\": 29.3\n                    },\n                    {\n                        \"year\": 2035,\n                        \"value\": 2162827,\n                        \"rate\": 31.3\n                    },\n                    {\n                        \"year\": 2040,\n                        \"value\": 2297617,\n                        \"rate\": 34.1\n                    },\n                    {\n                        \"year\": 2045,\n                        \"value\": 2334793,\n                        \"rate\": 35.7\n                    }\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}

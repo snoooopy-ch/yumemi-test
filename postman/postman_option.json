@@ -1,0 +1,30 @@
+{
+  "info": {
+    "title": "API Reference",
+    "version": "0.1.0",
+    "description": "バックエンドAPI仕様書",
+    "termsOfService": "https://localhost"
+
+  },
+  "pathDepth": 0,
+  "replaceVars": {
+    "base_url": true
+  },
+  "additionalVars":{
+    "base_url": "https://localhost"
+  },
+  "servers": [
+    {
+      "url": "http://localhost",
+      "description": "ローカル開発環境"
+    },
+    {
+      "url": "https://preview",
+      "description": "プレビュー環境"
+    },
+    {
+      "url": "https://production",
+      "description": "本番環境"
+    }
+  ]
+}

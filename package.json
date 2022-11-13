@@ -6,10 +6,16 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint --ext .ts,.js,.vue ."
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "p2o": "p2o ./postman/postman_collection.json -f ./postman/openapi.yml -o ./postman/postman_option.json",
+    "gen-fetch": "openapi-generator-cli generate -i ./postman/openapi.yml -g typescript-fetch -o ./postman/fetch",
+    "gen-doc": "openapi-generator-cli generate -i ./postman/openapi.yml -g html2 -o ./postman/html"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@openapitools/openapi-generator-cli": "^2.5.2",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
     "eslint": "^8.27.0",
@@ -18,6 +24,7 @@
     "eslint-plugin-vue": "^9.7.0",
     "nuxt": "3.0.0-rc.13",
     "prettier": "^2.7.1",
+    "sass": "^1.56.1",
     "typescript": "^4.8.4"
   }
 }

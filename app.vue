@@ -8,9 +8,6 @@
 
 <style scoped lang="scss">
 #app {
-  background-color: black;
-  min-height: 100vh;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: white;
 }
 </style>
