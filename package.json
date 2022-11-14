@@ -14,7 +14,7 @@
     "gen-doc": "openapi-generator-cli generate -i ./postman/openapi.yml -g html2 -o ./postman/html",
     "test": "jest",
     "test:report": "jest --ci --reporters=default --reporters=jest-junit",
-    "deploy": "gh-pages -d ./output/public"
+    "deploy": "gh-pages -d ./.output/public"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
