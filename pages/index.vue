@@ -1,7 +1,11 @@
 <template>
   <div>
-    <checkbox-group :ctrl="prefecturesCheckobx" />
-    <population-chart :ctrl="graph"/>
+    <div>
+      <checkbox-group :ctrl="prefecturesCheckobx" />
+    </div>
+    <div class="margin_top_20">
+      <population-chart :ctrl="graph"/>
+    </div>
   </div>
 </template>
 
@@ -101,3 +105,10 @@ const prefectureNameFromCode = ((code: string) => {
 })
 
 </script>
+
+
+<style scoped lang="scss">
+.margin_top_20 {
+  margin-top: 20px;
+}
+</style>

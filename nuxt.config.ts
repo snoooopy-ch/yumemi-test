@@ -3,18 +3,12 @@ import { defineNuxtConfig } from 'nuxt'
 import ConfigStrategy from "./env/strategy";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-console.log("Platform:"+ process.env.BUILD_ENV);
 const configStrategy = new ConfigStrategy(process.env.BUILD_ENV || "");
 
 const build = configStrategy.build;
 const workbox = configStrategy.workbox;
 const network = configStrategy.network;
 const scss = configStrategy.scss;
-
-console.log("ビルド設定",build);
-console.log("workbox設定",workbox);
-console.log("network設定",network);
-console.log("scss設定",scss);
 
 export default defineNuxtConfig({
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode

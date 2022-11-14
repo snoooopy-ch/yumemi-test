@@ -1,5 +1,8 @@
 <template>
-  <LineChart :chartData="graphDataSet" :options="options"/>
+  <div>
+    <div class="graph_title">人口数</div>
+    <LineChart ref="chart" :chartData="graphDataSet" :options="options"/>
+  </div>
 </template>
 
 <script lang="ts">
@@ -10,9 +13,10 @@ export default {
 
 <script setup lang="ts">
 import PopulationChartCtrl from './controller';
-import { LineChart } from 'vue-chart-3';
+import { LineChart, useLineChart } from 'vue-chart-3';
 import { Chart, registerables } from "chart.js";
 
+const chart = ref();
 Chart.register(...registerables);
 
 const props = defineProps({
@@ -22,15 +26,6 @@ const props = defineProps({
   }
 })
 
-watch(() => props.ctrl.labels, (newValue) => {
-  console.log('label changed')
-  graphDataSet.value.labels = [...newValue]
-})
-
-watch(() => props.ctrl.datasets, (newValue) => {
-  console.log('dataset changed', newValue)
-  graphDataSet.value.datasets = [...newValue]
-})
 const graphDataSet = ref({
   labels: [],
   datasets: [],
@@ -59,6 +54,28 @@ const options = {
         text: '人口数'
       }
     }
-  }
+  },
+  animation: false
 }
+
+watch(() => props.ctrl.labels, (newValue) => {
+  graphDataSet.value.labels = [...newValue]
+})
+
+watch(() => props.ctrl.datasets, (newValue) => {
+  graphDataSet.value.datasets = [...newValue]
+  chart.value.chartInstance.data = [...newValue]
+
+  if (newValue.length == 0) {
+    graphDataSet.value.datasets.length = 0;
+    graphDataSet.value.labels.length = 0;
+  }
+})
 </script>
+
+<style lang="scss" scoped>
+.graph_title {
+  font-size: $title-size;
+  margin-bottom: 10px;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ props.ctrl.label }}
+    <div class="checkbox_title">{{ props.ctrl.label }}</div>
     <div class="checkbox_row">
       <CheckboxInput
         v-for="(checkbox, index) in props.ctrl.checkboxes"
@@ -54,4 +54,17 @@ const onClickCheckboxInput = function(index: number) {
 </script>
 
 <style lang="scss" scoped>
+.checkbox {
+  &_title {
+    font-size: $title-size;
+    margin-bottom: 10px;
+  }
+  &_row {
+    &_item {
+      white-space: nowrap;
+      margin-right: 20px;
+    }
+  }
+}
+
 </style>
